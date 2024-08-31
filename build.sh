@@ -12,9 +12,9 @@ ASPNETCORE_VERSION="8.0.1-servicing.23580.8"
 ROOTFS_DIR="/"
 
 # Install prerequisites
-sudo dpkg --add-architecture riscv64
-sudo sed -i -E 's|^deb ([^ ]+) (.*)$|deb [arch=amd64] \1 \2\ndeb [arch=riscv64] http://ports.ubuntu.com/ubuntu-ports/ \2|' /etc/apt/sources.list
-sudo apt-get update
+# sudo dpkg --add-architecture riscv64
+# sudo sed -i -E 's|^deb ([^ ]+) (.*)$|deb [arch=amd64] \1 \2\ndeb [arch=riscv64] http://ports.ubuntu.com/ubuntu-ports/ \2|' /etc/apt/sources.list
+# sudo apt-get update
 sudo apt-get install -y --no-install-recommends \
     ca-certificates \
     python3-minimal \

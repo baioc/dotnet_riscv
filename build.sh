@@ -25,7 +25,6 @@ sudo apt-get install -y --no-install-recommends \
     cmake \
     locales \
     build-essential \
-    crossbuild-essential-riscv64 \
     zlib1g-dev:riscv64 \
     libkrb5-dev:riscv64 \
     libssl-dev:riscv64 \

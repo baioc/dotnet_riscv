@@ -1,6 +1,6 @@
 name: Build .NET SDK
 
-on: [workflow_dispatch]
+on: [workflow_dispatch, push]
 
 jobs:
   run:

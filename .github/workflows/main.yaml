@@ -4,7 +4,7 @@ on: [workflow_dispatch, pull_request, push]
 
 jobs:
   run:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     container:
       image: mcr.microsoft.com/dotnet-buildtools/prereqs:ubuntu-22.04-cross-riscv64
       env:
@@ -29,8 +29,7 @@ jobs:
     - name: Update Node.js
       run: |
         apt-get update
-        apt-get autoremove -y nodejs
-        curl -fsSL https://deb.nodesource.com/setup_18.x | bash - && apt-get install -y nodejs
+        apt-get install -y nodejs
 
     - name: Build runtime
       run: |

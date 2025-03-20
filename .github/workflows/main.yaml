@@ -28,6 +28,7 @@ jobs:
 
     - name: Update Node.js
       run: |
+        apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 16FAAD7AF99A65E2
         apt-get update
         apt-get autoremove -y nodejs
         curl -fsSL https://deb.nodesource.com/setup_18.x | bash - && apt-get install -y nodejs

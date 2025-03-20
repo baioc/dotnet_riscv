@@ -1,10 +1,10 @@
 name: Build .NET SDK
 
-on: [workflow_dispatch, pull_request]
+on: [workflow_dispatch, pull_request, push]
 
 jobs:
   run:
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     container:
       image: mcr.microsoft.com/dotnet-buildtools/prereqs:ubuntu-22.04-cross-riscv64
       env:

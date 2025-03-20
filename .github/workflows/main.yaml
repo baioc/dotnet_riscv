@@ -30,7 +30,7 @@ jobs:
       run: |
         apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 16FAAD7AF99A65E2
         apt-get update
-        apt-get install -y nodejs
+        apt-get install -y nodejs build-essential clang
 
     - name: Build runtime
       run: |
